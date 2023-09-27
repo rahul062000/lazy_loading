@@ -1,0 +1,63 @@
+/* Reset default margin and padding for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #0033cc
+    , #ccd9ff); /* Add your gradient colors here */
+    color: white; /* Text color for better visibility */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* Style cryptocurrency list */
+#crypto-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.crypto-item {
+    width: calc(30% - 2%); /* Adjust width and margin */
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.crypto-item img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Style loading message */
+#loading {
+    text-align: center;
+    display: none;
+}
+
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .crypto-item {
+        width: calc(50% - 2%); /* Adjust width and margin for smaller screens */
+    }
+}
